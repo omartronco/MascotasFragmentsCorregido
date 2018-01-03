@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/altura_tarjeta_mascota"
+    android:background="#B2EBF2">
+
+    <ImageView
+        android:id="@+id/imgMascota"
+        android:layout_width="@dimen/ancho_tarjeta_mascota"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perrito"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margen_superior"
+        />
+
+    <ImageView
+        android:id="@+id/imgHueso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hueso"
+        android:layout_below="@+id/imgMascota"
+        android:layout_alignLeft="@+id/imgMascota"
+        android:layout_marginTop="@dimen/margen_superior_hueso"
+        />
+
+    <TextView
+        android:id="@+id/simple_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5D4037"
+        android:layout_marginLeft="@dimen/margen_izq"
+        android:text="Nombre mascota"
+        android:layout_toRightOf="@+id/imgHueso"
+        android:layout_below="@+id/imgMascota"
+        />
+
+    <TextView
+        android:id="@+id/tvHuesos"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margen_izq"
+        android:text="3"
+        android:textAlignment="textEnd"
+        android:layout_below="@+id/imgMascota"
+        android:layout_toLeftOf="@+id/imgHuesoRelleno"
+        android:layout_marginEnd="@dimen/margen_superior"
+        android:textColor="#5D4037"
+        />
+
+    <ImageView
+        android:id="@+id/imgHuesoRelleno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hueso_relleno"
+        android:layout_below="@+id/imgMascota"
+        android:layout_alignRight="@+id/imgMascota"
+        android:layout_marginTop="@dimen/margen_superior_hueso_relleno"
+        />
+
+</RelativeLayout>
